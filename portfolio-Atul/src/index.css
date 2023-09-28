@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;600;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+/* -- -----------------Aboutt---------------------  */
+
+#about {
+    padding: 30px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    height: 470px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 40%;
+}
+
+.sub-title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #052f9b;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 15px 0 30px;
+}
+
+.tab-titles p{
+    font-size: 18px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #0a35a2;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span:nth-child(1) {
+    /* color: rgb(108, 108, 251); */
+    color: #02216f;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.tab-contents ul li span:nth-child(3) {
+    /* color: rgb(108, 108, 251); */
+    font-size: 15px;
+    font-weight: 500;
+    color: gray;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.active-tab.active-tab {
+    display: block;
+}
+
+.cont-left {
+    flex-basis: 30%;
+}
+
+.cont-left p {
+    margin-top: 30px;
+}
+
+.cont-left p i {
+    color: #001b5e;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #001b5e;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #0233ad;
+    transform: translateY(-5px);
+}
+
+.btn2 {
+    display: inline-block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #001b5e;
+    ;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    background-color: #001b5e;
+}
+.btn2:hover{
+    background-color: #0233ad;
+}
