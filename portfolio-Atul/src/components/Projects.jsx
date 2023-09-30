@@ -32,7 +32,7 @@ const Projects = () => {
           title="PGLife Website"
           techUsed="MERN Technology"
           deployLink="Not Available"
-          gitLink="Soon"
+          gitLink="https://github.com/Atulsharma2004/PGLife_Project_MERN_Tech"
         />
         <ProjectItem
           img={pizza}
