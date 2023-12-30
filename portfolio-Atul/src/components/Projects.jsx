@@ -5,6 +5,7 @@ import password from "../assets/password.png";
 import pglife from "../assets/pglife.png";
 import pizza from "../assets/pizza.png";
 import weather from "../assets/weather.png";
+import realEstate from "../assets/realestate.png";
 
 import ProjectItem from "./ProjectItem";
 
@@ -21,6 +22,13 @@ const Projects = () => {
       </p>
       <div className="grid sm:grid-cols-2 gap-12">
         <ProjectItem
+          img={realEstate}
+          title="Real Estate Website"
+          techUsed="MERN Technology"
+          deployLink="https://estate-dream-place.onrender.com/"
+          gitLink="https://github.com/Atulsharma2004/Estate-website-MERN"
+        />
+        <ProjectItem
           img={ecommerce}
           title="Ecommerce Website"
           techUsed="MERN Technology"
@@ -31,7 +39,7 @@ const Projects = () => {
           img={pglife}
           title="PGLife Website"
           techUsed="MERN Technology"
-          deployLink="Not Available"
+          deployLink="https://pg-life-project-mern-tech.vercel.app/"
           gitLink="https://github.com/Atulsharma2004/PGLife_Project_MERN_Tech"
         />
         <ProjectItem
