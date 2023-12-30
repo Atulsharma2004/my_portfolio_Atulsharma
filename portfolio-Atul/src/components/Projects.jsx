@@ -31,7 +31,7 @@ const Projects = () => {
           img={pglife}
           title="PGLife Website"
           techUsed="MERN Technology"
-          deployLink="Not Available"
+          deployLink="https://pg-life-project-mern-tech.vercel.app/"
           gitLink="https://github.com/Atulsharma2004/PGLife_Project_MERN_Tech"
         />
         <ProjectItem
