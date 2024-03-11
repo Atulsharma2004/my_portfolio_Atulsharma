@@ -126,14 +126,16 @@ const Resume = () => {
                   <li>
                     <span>UI?UX</span>
                     <br />
-                    <span>Designing Web Interfaces with Figma</span>
+                    <span>
+                      Designing Web Interfaces with Figma and Word Press
+                    </span>
                   </li>
                   <li>
                     <span>Technical Languages and Tools</span>
                     <br />
                     <span>
                       Basic C / C++ / Python Basics / Git / MS Word / Power
-                      Point
+                      Point, PHP, JavaScript
                     </span>
                   </li>
                   <li>
@@ -141,8 +143,9 @@ const Resume = () => {
                     <br />
                     <span>
                       Frontend (HTML, CSS, JavaScript, React, Bootstrap,
-                      Tailwind CSS)/ Backend (Node, Express, PHP Basics) /
-                      Database (MongoDB, SQL Basics)
+                      Tailwind CSS) <br /> Backend (Node Js, Express Js, PHP
+                      Basics) <br />
+                      Database (MongoDB, SQL)
                     </span>
                   </li>
                 </ul>

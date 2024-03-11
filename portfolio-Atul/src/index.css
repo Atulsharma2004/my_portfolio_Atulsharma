@@ -149,3 +149,11 @@
 .btn2:hover{
     background-color: #0233ad;
 }
+
+.btn3{
+    border: 1px solid #001b5e;
+    background-color: #001b5e;
+}
+.btn3:hover{
+    background-color: #0233ad;
+}
