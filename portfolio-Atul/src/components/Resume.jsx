@@ -68,6 +68,15 @@ const Resume = () => {
                     <BsFacebook />
                   </a>
                 </div>
+                <h2 className="sub-title mt-8 mb-[-19px]">Career Objective</h2>
+              <p className="text-md font-normal text-gray-500">
+              Innovative Electronics and Communication Engineering student with a passion for applying theoretical 
+              knowledge to real-world projects in the IoT field. Highly motivated to drive impactful, data-driven solutions 
+              and create seamless integrations between hardware and software. Seeking a challenging software engineering role where 
+              I can leverage my skills in embedded systems, networking, and data analytics to contribute to the next 
+              generation of connected devices and smart systems.
+              </p>
+
                 <a
                   href={resumePdf}
                   download="Resume-Atul-Sharma"
@@ -80,16 +89,15 @@ const Resume = () => {
               </div>
             </div>
             <div className="about-col-2">
-              <h2 className="sub-title">Career Objective</h2>
+              {/* <h2 className="sub-title">Career Objective</h2>
               <p className="text-md font-normal text-gray-500">
-                Ideal and passionate Full Stack Developer with extensive
-                technical expertise and can work independently or with a team to
-                create, maintain, and update intuitive and visually appealing
-                user experiences that solve real-world problems. I have courage
-                to adjust in a fast-paced, innovative environment. I have a
-                strong background in computer science and a passion for
-                developing innovative solutions.
-              </p>
+              Innovative Electronics and Communication Engineering student with a passion for applying theoretical 
+              knowledge to real-world projects in the IoT field. Highly motivated to drive impactful, data-driven solutions 
+              and create seamless integrations between hardware and software. Seeking a challenging software engineering role where 
+              I can leverage my skills in embedded systems, networking, and data analytics to contribute to the next 
+              generation of connected devices and smart systems.
+              </p> */}
+              
               <div className="tab-titles">
                 <p
                   className={`tab-links ${
@@ -105,7 +113,7 @@ const Resume = () => {
                   }`}
                   onClick={() => opentab("experience")}
                 >
-                  Skills
+                   Skills
                 </p>
                 <p
                   className={`tab-links ${
@@ -124,28 +132,35 @@ const Resume = () => {
               >
                 <ul>
                   <li>
-                    <span>UI?UX</span>
+                    <span>Hardware & Interface Skills</span>
                     <br />
                     <span>
-                      Designing Web Interfaces with Figma and Word Press
+                    <b>Communication Protocols:</b> (I2C, I2S, PMW, SPI, UART, GPIO, )<br />
+                    <b>Sensor Integration:</b> (Temperature & Humidity Sensors(TMP102, HTU21), Light Dependent Resistor Sensors(LDR))<br />
+                    <b>Peripherals:</b> (LCD Displays, LEDs (RGB), Relays, Motor Drivers, Barcode Scanner, Printers, USB TO TTL Adapter)<br/>
+                    <b>Embedded Systems:</b> (Realtek RTL872xD, ESP32, Arduino Nano/ATMega, Raspberry Pi, BlueNRG ST Module, Rafael & Qualcum Boards)<br />
                     </span>
                   </li>
                   <li>
                     <span>Technical Languages and Tools</span>
                     <br />
                     <span>
-                      Basic C / C++ / Python Basics / Git / MS Word / Power
-                      Point, PHP, JavaScript
+                    <b>Programming Languages:</b> (C, C++, Python, Embedded C, C# Basics)<br />
+                    <b>Networking:</b> (TCP/IP, UDP, Socket Programming)<br />
+                    <b>IoT Protocols:</b> (MQTT, CoAP, HTTP, BLE, Zigbee)<br />
+                    <b>Development Platforms:</b> (IAR Embedded Workbench, Arduino IDE, STM32 CubeIDE, Flashing Tools, VSCode, Visual Basics, Eclipse)<br />
+                    <b>Testing & Debugging Tools:</b> (TeraTerm, Docklight, SSCOM, Oscilloscope)<br />
+                    <b>Version Control:</b> (Git, GitHub, Bitbucket)<br /> 
                     </span>
                   </li>
                   <li>
-                    <span>Full Stack Web Development</span>
+                    <span>Software Development</span>
                     <br />
-                    <span>
-                      Frontend (HTML, CSS, JavaScript, React, Bootstrap,
-                      Tailwind CSS) <br /> Backend (Node Js, Express Js, PHP
-                      Basics) <br />
-                      Database (MongoDB, SQL)
+                    <span>  
+                    <b>Frontend:</b> (React JS, Tailwind CSS, Figma, WordPress) <br /> 
+                    <b>Backend:</b> (Node Js, Express Js, PHP
+                      Basics, Python, Dot Net Basics, ) <br />
+                      <b>Database:</b> (MongoDB, SQL, SQLLite)<br />
                     </span>
                   </li>
                 </ul>
@@ -168,13 +183,19 @@ const Resume = () => {
                   <li>
                     <span>Leadership</span>
                     <br />
-                    <span>Leadership skills with Team Management.</span>
+                    <span>
+                      Leadership skills.
+                      Team Collaboration & Team Management.
+                      Project Management.
+                    </span>
                   </li>
                   <li>
                     <span>Problem Solving</span>
                     <br />
                     <span>
-                      Thinking, analyzing and Problem solving capability.
+                      Problem Solving, Analyzing & Critical Thinking.
+                      Adaptability & Continuous Learning.
+                      
                     </span>
                   </li>
                 </ul>
@@ -201,10 +222,11 @@ const Resume = () => {
                   <li>
                     <span>2020-2024 (ongoing..)</span>
                     <br />
-                    <span>B.Tech from F.G.I.E.T., Raebareli.</span>
+                    <span>Passed B.Tech from F.G.I.E.T., Raebareli with <b className="text-gray-800">81% marks</b> and <b className="text-gray-800">Pass with Distinction</b>.</span>
                   </li>
                 </ul>
               </div>
+              
             </div>
           </div>
         </div>

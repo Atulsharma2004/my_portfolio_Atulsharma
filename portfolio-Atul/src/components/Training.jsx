@@ -2,6 +2,13 @@ import TrainingItem from "./TrainingItem";
 
 const data = [
   {
+    duration: "July 2024 - Present...",
+    title: "Software Engineer at Momagic Technologies Pvt. Ltd., New Delhi",
+    role: "Building interactive and fast software tools and websites using different technologies like C/C++, Python, MERN, PHP, Dot net, etc",
+    details:
+      "I have Developed and deployed IoT applications, leveraging BLE, Wi-Fi, and low-power communication protocols to connect devices and streamline data collection. Developed and optimized embedded software for IoT devices, with a focus on different modules, enhancing functionality in BLE, I2C, SPI, and UART protocols. Worked on real-time data acquisition systems, utilizing sensors and edge computing solutions to enhance data processing and reduce latency in IoT networks. Designed and maintained backend systems for IoT data processing, including data pipelines and server integration, to ensure reliable data collection and storage",
+  },
+  {
     duration: "Jan 2024 - Mar 2024",
     title: "Software Development Intern at Synthetico.ai Pvt. Ltd., Jaipur",
     role: "Full Stack Development(MERN) with Git & Github management, Documentation and Database Integration",
@@ -41,8 +48,8 @@ const data = [
 const Training = () => {
   return (
     <div id="training" className="max-w-[1040px] m-auto md:pl-20 px-4 py-14">
-      <h1 className="sm:text-4xl text-3xl font-bold text-center text-[#001b5e] mb-8">
-        Trainings & Internships
+      <h1 className="sm:text-4xl text-4xl font-bold text-center text-[#001b5e] mb-12">
+        Trainings, Internships & Work Experience
       </h1>
       {data.map((item, idx) => (
         <TrainingItem
