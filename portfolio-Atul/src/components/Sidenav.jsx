@@ -3,6 +3,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineHome, AiOutlineProject, AiOutlineMail } from "react-icons/ai";
 import { GiSkills } from "react-icons/gi";
 import { BsPerson } from "react-icons/bs";
+import { MdWorkOutline } from "react-icons/md";
 
 const Sidenav = () => {
   const [nav, setNav] = useState(false);
@@ -26,6 +27,15 @@ const Sidenav = () => {
           >
             <AiOutlineHome size={20} className="text-blue-400" />
             <span className="pl-4 text-white">Home</span>
+          </a>
+
+          <a
+            onClick={handleNav}
+            href="#experience"
+            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-blue-500/20 border border-blue-500/30 hover:bg-blue-500/30 m-3 p-4 cursor-pointer transition duration-300"
+          >
+            <MdWorkOutline size={20} className="text-blue-400" />
+            <span className="pl-4 text-white">Experience</span>
           </a>
 
           <a
@@ -69,6 +79,14 @@ const Sidenav = () => {
             title="Home"
           >
             <AiOutlineHome size={20} className="text-blue-400" />
+          </a>
+
+          <a
+            href="#experience"
+            className="rounded-full shadow-lg bg-blue-500/20 border border-blue-500/30 hover:bg-blue-500/30 p-4 cursor-pointer transition duration-300 transform hover:scale-110"
+            title="Experience"
+          >
+            <MdWorkOutline size={20} className="text-blue-400" />
           </a>
 
           <a
