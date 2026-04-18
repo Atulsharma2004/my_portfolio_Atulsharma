@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
 
 
 @tailwind base;
@@ -6,9 +6,20 @@
 @tailwind utilities;
 
 
-*{
+html {
     scroll-behavior: smooth;
-    font-family: 'Ibarra Real Nova', serif;
+    background: linear-gradient(to bottom, #0f172a, #1e293b);
+}
+
+* {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #0f172a, #1e293b);
+    color: #f1f5f9;
 }
 
 /* -- -----------------Aboutt---------------------  */
@@ -40,7 +51,7 @@
 .sub-title {
     font-size: 25px;
     font-weight: 600;
-    color: #052f9b;
+    color: #60a5fa;
 }
 
 .tab-titles {
@@ -64,7 +75,7 @@
     content: '';
     width: 0;
     height: 3px;
-    background-color: #0a35a2;
+    background-color: #3b82f6;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -73,6 +84,7 @@
 
 .tab-links.active-link::after {
     width: 50%;
+    background-color: #60a5fa;
 }
 
 .tab-contents ul li {
@@ -81,17 +93,15 @@
 }
 
 .tab-contents ul li span:nth-child(1) {
-    /* color: rgb(108, 108, 251); */
-    color: #02216f;
+    color: #60a5fa;
     font-size: 17px;
     font-weight: 700;
 }
 
 .tab-contents ul li span:nth-child(3) {
-    /* color: rgb(108, 108, 251); */
     font-size: 15px;
     font-weight: 500;
-    color: gray;
+    color: #cbd5e1;
 }
 
 .tab-contents {
@@ -111,7 +121,7 @@
 }
 
 .cont-left p i {
-    color: #001b5e;
+    color: #60a5fa;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -124,13 +134,13 @@
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #001b5e;
+    color: #60a5fa;
     display: inline-block;
-    transition: transform 0.5s;
+    transition: all 0.5s;
 }
 
 .social-icons a:hover {
-    color: #0233ad;
+    color: #93c5fd;
     transform: translateY(-5px);
 }
 
@@ -138,22 +148,25 @@
     display: inline-block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #001b5e;
-    ;
+    border: 1px solid #3b82f6;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     color: white;
-    background-color: #001b5e;
+    background-color: #3b82f6;
+    transition: all 0.3s;
 }
-.btn2:hover{
-    background-color: #0233ad;
+.btn2:hover {
+    background-color: #60a5fa;
+    box-shadow: 0 0 20px rgba(96, 165, 250, 0.5);
 }
 
-.btn3{
-    border: 1px solid #001b5e;
-    background-color: #001b5e;
+.btn3 {
+    border: 1px solid #3b82f6;
+    background-color: #3b82f6;
+    transition: all 0.3s;
 }
-.btn3:hover{
-    background-color: #0233ad;
+.btn3:hover {
+    background-color: #60a5fa;
+    box-shadow: 0 0 20px rgba(96, 165, 250, 0.5);
 }

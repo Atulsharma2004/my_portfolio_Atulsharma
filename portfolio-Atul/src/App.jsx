@@ -3,14 +3,12 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 import Sidenav from "./components/Sidenav";
-import Training from "./components/Training";
 
 function App() {
   return (
-    <div>
+    <div className="bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 min-h-screen">
       <Sidenav />
       <Home />
-      <Training />
       <Projects />
       <Resume />
       <Contact />

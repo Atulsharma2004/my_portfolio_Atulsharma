@@ -3,7 +3,16 @@ export default {
   content: ["./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
+      },
+      colors: {
+        background: '#0f172a',
+        foreground: '#f1f5f9',
+      }
+    },
   },
   plugins: [],
 }

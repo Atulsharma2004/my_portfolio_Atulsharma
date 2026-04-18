@@ -1,203 +1,120 @@
-import clock from "../assets/clock.png";
-import news from "../assets/news.png";
-import ecommerce from "../assets/ecommerce.png";
-import password from "../assets/password.png";
-import pglife from "../assets/pglife.png";
-import pizza from "../assets/pizza.png";
-import weather from "../assets/weather.png";
-import realEstate from "../assets/realestate.png";
-import iif from "../assets/iif.png";
-import ims from "../assets/ims.png";
-import aryainfra from "../assets/aryainfra.png";
-
 import ProjectItem from "./ProjectItem";
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   const [showAllProjects, setShowAllProjects] = useState(false);
 
-  const allProjects = [
-    // Add other projects here,
+  const embeddedProjects = [
     {
-      img: ims,
-      title: "Inventory Management System",
-      techUsed: "PHP",
-      deployLink: "",
-      gitLink: "",
+      title: "IoT Development with Qualcomm's NB-IoT Controller",
+      description: "Comprehensive IoT application stack using Qualcomm chipsets with NB-IoT SDK. Integrated NB-IoT, GPRS, Wi-Fi, TCP/UDP, HTTP/MQTT protocols. Implemented peripheral interfaces (GPIO, I2C, UART, PWM, ADC, I2S) and multithreaded RTOS tasks.",
+      tech: ["C/C++", "NB-IoT", "MQTT", "TCP/IP", "RTOS"],
+      duration: "Jan 2025 - Present",
+      gitLink: "https://github.com/Atulsharma2004",
     },
     {
-      img: iif,
-      title: "Invest in Franchise",
-      techUsed: "React",
-      deployLink: "https://investinfranchise.in/",
-      gitLink: "",
+      title: "Realtek RTL872xD IoT Development (Wi-Fi & BLE)",
+      description: "BLE (GAP, GATT, Beacon) and Wi-Fi (802.11b/g/n) implementation. Integrated HTTP and MQTT for cloud communication. Worked with sensors (HTU21, LDR), LCD displays, audio modules, and servo motors using IAR Embedded Workbench.",
+      tech: ["Embedded C", "BLE", "Wi-Fi", "IAR Workbench", "Peripheral Drivers"],
+      duration: "Sep 2024 - Jan 2025",
+      gitLink: "https://github.com/Atulsharma2004",
     },
     {
-      img: aryainfra,
-      title: "AryaInfra Construction",
-      techUsed: "React",
-      deployLink: "https://aaryainfra.com/",
-      gitLink: "",
+      title: "STM32 Bare-Metal & RTOS Development",
+      description: "Low-level firmware development using libopencm3 for STM32 microcontrollers. Implemented device drivers for UART, SPI, I²C, GPIO, timers, and watchdogs. Developed bootloaders and firmware update mechanisms with JTAG/UART debugging.",
+      tech: ["Embedded C", "STM32", "libopencm3", "FreeRTOS", "Device Drivers"],
+      duration: "Ongoing",
+      gitLink: "https://github.com/Atulsharma2004",
     },
     {
-      img: realEstate,
-      title: "Real Estate Website",
-      techUsed: "MERN Technology",
-      deployLink: "https://estate-dream-place.onrender.com/",
-      gitLink: "https://github.com/Atulsharma2004/Estate-website-MERN",
-    },
-    {
-      img: ecommerce,
-      title: "Ecommerce Website",
-      techUsed: "MERN Technology",
-      deployLink: "https://ecommerce-payment-app.netlify.app/",
-      gitLink: "https://github.com/Atulsharma2004/mernWebFynd",
-    },
-    {
-      img: pglife,
-      title: "PGLife Website",
-      techUsed: "MERN Technology",
-      deployLink: "https://pg-life-project-mern-tech.vercel.app/",
-      gitLink: "https://github.com/Atulsharma2004/PGLife_Project_MERN_Tech",
-    },
-    {
-      img: pizza,
-      title: "Realtime Pizza Website",
-      techUsed: "Backend with EJS",
-      deployLink: "Not Available",
-      gitLink:
-        "https://github.com/Atulsharma2004/Real_time-Pizza_website-using-node-ejs",
-    },
-    {
-      img: news,
-      title: "News Api Website",
-      techUsed: "React",
-      deployLink: "Not Available",
-      gitLink: "https://github.com/Atulsharma2004/News-ApiWeb",
-    },
-    {
-      img: weather,
-      title: "Weather Api Website",
-      techUsed: "Node js with HBS",
-      deployLink: "Not Available",
-      gitLink: "https://github.com/Atulsharma2004/weatherApp",
-    },
-    {
-      img: password,
-      title: "Password Generator Page",
-      techUsed: "JavaScript",
-      deployLink: "Not Available",
-      gitLink:
-        "https://github.com/Atulsharma2004/fyndAcademy/tree/master/javaScript/Password-Generator",
-    },
-    {
-      img: clock,
-      title: "Analog Clock",
-      techUsed: "JavaScript",
-      deployLink: "Not Available",
-      gitLink:
-        "https://github.com/Atulsharma2004/fyndAcademy/tree/master/javaScript/Analog-Clock",
+      title: "Raspberry Pi 4 Kernel Driver Development",
+      description: "Designed and implemented kernel-space and user-space drivers for GPIO, I²C, and SPI peripherals on Raspberry Pi 4 running Linux. Built with CMake and Makefiles. Validated with logic analyzer and oscilloscope measurements.",
+      tech: ["C", "Linux Kernel", "Device Drivers", "CMake", "Makefiles"],
+      duration: "2024",
+      gitLink: "https://github.com/Atulsharma2004",
     },
   ];
 
-  // const topProjects = allProjects.slice(0, 6);
-
-  // const onShowMoreClick = () => {
-  //   const topProjects = allProjects.slice(0, 8);
-  //   setShowAllProjects(true);
-  // };
-
-  const topProjects = showAllProjects ? allProjects : allProjects.slice(0, 6);
+  const topProjects = showAllProjects ? embeddedProjects : embeddedProjects.slice(0, 3);
 
   return (
-    <>
-      <div id="projects" className="max-w-[1040px] m-auto md:pl-20 p-4 py-4">
-        <h1 className="sm:text-4xl text-3xl font-bold text-center text-[#001b5e] ">
-          Projects
-        </h1>
-        <p className="text-center py-8">
-          MERN is a popular technology stack for building full-stack web
-          applications. Here are some project that I have made using javaScript,
-          React and MERN Technology:
-        </p>
-        <div className="grid sm:grid-cols-2 gap-12">
+    <div id="projects" className="bg-gradient-to-b from-slate-800 to-slate-900 py-20 px-4 md:px-8">
+      <div className="max-w-6xl m-auto">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Featured Projects
+          </h1>
+          <p className="text-slate-300 text-lg max-w-2xl mx-auto">
+            Specialized in embedded systems and IoT development. Here are my key projects working with microcontrollers, firmware development, and real-time systems.
+          </p>
+        </div>
+
+        <div className="space-y-6">
           {topProjects.map((project, index) => (
-            <ProjectItem
+            <div
               key={index}
-              img={project.img}
-              title={project.title}
-              techUsed={project.techUsed}
-              deployLink={project.deployLink}
-              gitLink={project.gitLink}
-            />
+              className="bg-slate-700/40 hover:bg-slate-700/60 border border-slate-600 rounded-xl p-8 transition duration-300 transform hover:scale-105"
+            >
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-white mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-blue-400 text-sm font-medium">{project.duration}</p>
+                </div>
+                <a
+                  href={project.gitLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition duration-300"
+                >
+                  <FaGithub size={18} />
+                  View Code
+                </a>
+              </div>
+
+              <p className="text-slate-300 mb-6 leading-relaxed">
+                {project.description}
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                {project.tech.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-medium border border-blue-500/30"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
 
-        {/* <div className="grid sm:grid-cols-2 gap-12">
-        
-        {topProjects.map((project, index) => (
-          <ProjectItem
-            key={index}
-            img={project.img}
-            title={project.title}
-            techUsed={project.techUsed}
-            deployLink={project.deployLink}
-            gitLink={project.gitLink}
-          />
-        ))}
-      </div>
-      {allProjects.length > 6 && !showAllProjects && (
-        <div className="text-center">
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            onClick={() => setShowAllProjects(true)}
-          >
-            Show More
-          </button>
-        </div>
-      )}
-      {showAllProjects && (
-        <div className="text-center">
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            onClick={() => setShowAllProjects(false)}
-          >
-            Show Less
-          </button>
-        </div>
-      )} */}
-      </div>
-      {!showAllProjects && (
-        <div className="w-full m-auto text-center mt-8">
-          <button
-            onClick={() => setShowAllProjects(true)}
-            className="btn3 text-white font-bold py-2 px-4 rounded text-center"
-          >
-            Show more
-          </button>
-        </div>
-      )}
+        {!showAllProjects && embeddedProjects.length > 3 && (
+          <div className="text-center mt-10">
+            <button
+              onClick={() => setShowAllProjects(true)}
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300"
+            >
+              View All Projects
+            </button>
+          </div>
+        )}
 
-      {showAllProjects && (
-        <div className="w-full m-auto text-center mt-8">
-          <button
-            onClick={() => setShowAllProjects(false)}
-            className="btn3 text-white font-bold py-2 px-4 rounded text-center"
-          >
-            Show Less
-          </button>
-        </div>
-      )}
-
-      {/* <div className="text-center">
-        <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-          onClick={() => setShowAllProjects(true)}
-        >
-          Show More
-        </button>
-      </div> */}
-    </>
+        {showAllProjects && embeddedProjects.length > 3 && (
+          <div className="text-center mt-10">
+            <button
+              onClick={() => setShowAllProjects(false)}
+              className="bg-slate-600 hover:bg-slate-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300"
+            >
+              Show Less
+            </button>
+          </div>
+        )}
+      </div>
+    </div>
   );
 };
 
