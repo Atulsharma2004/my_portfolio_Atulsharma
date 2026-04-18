@@ -60,10 +60,10 @@ const Home = () => {
         </div>
 
         {/* Right Profile Image */}
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center">
           <div className="relative w-80 h-80 rounded-2xl overflow-hidden shadow-2xl border-2 border-blue-500/30 hover:border-blue-500/60 transition duration-300">
             <img
-              src="/src/assets/Mypic.jpeg"
+              src="/Mypic.jpeg"
               alt="Atul Sharma"
               className="w-full h-full object-cover"
             />
